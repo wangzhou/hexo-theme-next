@@ -52,7 +52,7 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2021
 
   # Icon between year and copyright info.
   icon:
@@ -258,7 +258,7 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
@@ -424,7 +424,10 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Monda
+    #    family: Monda
+    family: Noto Serif SC
+    #family: KaiTi
+    #family: STXingKai
     size:
 
   # Font settings for site title (.site-title).
@@ -436,7 +439,8 @@ font:
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family: Roboto Slab
+    family: Noto Serif SC
+    #family: Roboto Slab
     size:
 
   # Font settings for posts (.post-body).
@@ -447,8 +451,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
-
+    family: Roboto Mono
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -613,7 +616,7 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: true
+  enable: false
   appid: vKlONtxGqPcJ8DmJtcPtl5DE-gzGzoHsz
   appkey: UjUg6M4ugEbKttf0E45NSOQH
   notify: false # Mail notifier
@@ -648,6 +651,14 @@ gitalk:
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
 
+utteranc:
+  enable: true
+  repo: wangzhou/blog_comments
+  pathname: pathname
+  #issue_term: pathname
+  # theme: github-light,github-dark,github-dark-orange
+  theme: github-light
+  cdn: https://utteranc.es/client.js
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
